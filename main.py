@@ -26,14 +26,32 @@ print("A intersection B: ",a.intersection(b))
 print("C intersection B: ",c & b)
 
 # difference
-print(a.difference(b))
-print(a - b)
-print(b - a)
+print("A difference B: ",a.difference(b))
+print("B difference A: ",b - a)
 
 # disjoint
-print(a.isdisjoint(d))
-print(a.isdisjoint(c))
+print("A and D are disjoint sets: ",a.isdisjoint(d))
+print("A and C are disjoint sets: ",a.isdisjoint(c))
 
 # subset
-print(c.issubset(a))
-print(b.issubset(a))
+print("C is subset of A: ",c.issubset(a))
+print("B is subset of A: ",b.issubset(a))
+
+# superset
+print("A is superset of C: ",a.issuperset(c))
+print("C is superset of A: ",c.issuperset(a))
+
+# add element
+a.add(99)
+print(a)
+
+# remove element
+a.remove(5)
+print(a)
+
+a.pop()
+print(a)
+
+# clear elements
+a.clear()
+print(a)
