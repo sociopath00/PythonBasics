@@ -1,0 +1,22 @@
+# Using Conda env with Sublime3
+{
+    "cmd": ["/path/to/python", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python"
+}
+
+
+xoxb-486667318358-538504204658-DE6sgB53HFLR4WLTcfFiGYaF
+
+
+curl -X POST -F file1=@"E:/Projects/image search/query/6.jpg" http://localhost:5000/img
+
+curl -X POST -F file1=@"E:/Projects/image search/query/6.jpg" http://akshayn.pythonanywhere.com/img
+
+
+python -m retrain --bottleneck_dir=tf_files/bottlenecks --how_many_training_steps=500 --model_dir=tf_files/models/ --summaries_dir=tf_files/training_summaries/224 --output_graph=tf_files/retrained_graph.pb --output_labels=tf_files/retrained_labels.txt --architecture=224 --image_dir="training data"
+Hey I am learning pythonHey I am learning python1
+2
+3
+4
+5
