@@ -62,11 +62,4 @@ print(avg(a))
 # print(percentage(20,50))
 
 
-def list_sqr(l):
-    for i in l:
-        yield i*i
-
-j = [i for i in list_sqr([1,2,3,4])]
-print(j)
-
 

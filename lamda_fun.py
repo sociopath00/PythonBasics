@@ -20,6 +20,3 @@ def sqr(val,y):
     return val(y)
 
 print(sqr(lambda x:x*2, 2))
-
-
-
