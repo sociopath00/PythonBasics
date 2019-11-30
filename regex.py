@@ -37,11 +37,11 @@ statement1 = "The earth is flat"
 statement2 = "is it free?"
 
 # find python in above statement
-word = re.search(r"python", statement)
+word = re.search(r"python", statement, re.IGNORECASE)
 print(word)
 print(word.group())
 
-# find all occurance
+# # find all occurance
 words = re.findall(r"python", statement, re.IGNORECASE)
 print(words)
 
@@ -58,14 +58,15 @@ pattern = ".*\?$"
 words = re.search(pattern, statement1)
 print(words)
 
-words = re.search(pattern, statement2)
-print(words)
-
 words = re.search(pattern, statement)
 print(words)
+print(words.group())
+
+# words = re.search(pattern, statement2)
+# print(words)
 
 ## More
-statement = "Raj is 17 years old and born in 2002 whereas Sameer is born in 1999 and 20. Jas is 7 years old"
+statement = "Raj is 17 years old and born in 2002 whereas Sameer is born in 1999 and 20. Jas is 7 years old where"
 
 # find numbers
 numbers = re.findall("\d", statement)
@@ -74,9 +75,11 @@ print(numbers)
 numbers = re.findall("\d+", statement)
 print(numbers)
 
-years = re.findall("\d{4}", statement)
+years = re.findall("\d{2,4}", statement)
 print(years)
 
 names = re.findall("[A-Z][a-z]+", statement)
 print(names)
 
+
+print(re.findall(r"\bwhere\b", statement))

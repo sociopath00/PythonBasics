@@ -30,11 +30,11 @@ x_datetime = datetime.datetime.strptime(x, "%d-%m-%Y")
 print(x_datetime)
 print(type(x_datetime))
 
-print(x_datetime.date())
+# print(x_datetime.date())
 
-# convert datetime into str
+# # convert datetime into str
 y = datetime.datetime.strftime(x_datetime, "%Y-%m-%d")
 print(y)
 print(type(y))
 
-# To explore more, refer:  https://www.programiz.com/python-programming/datetime
+# # To explore more, refer:  https://www.programiz.com/python-programming/datetime
